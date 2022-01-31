@@ -1,0 +1,65 @@
+Input params at 2022-01-06 23:41:31.
+[CUSTOM]
+-- num_classes: 2
+-- output_prob: False
+-- label_normalisation: False
+-- softmax: True
+-- min_sampling_ratio: 0
+-- compulsory_labels: (0, 1)
+-- rand_samples: 0
+-- min_numb_labels: 1
+-- proba_connect: True
+-- evaluation_units: foreground
+-- image: ('T2',)
+-- weight: ()
+-- inferred: ()
+-- sampler: ()
+-- label: ()
+-- name: net_segment
+[CONFIG_FILE]
+-- path: C:\Users\pmeht\Documents\packages\patient_classification_framework\0_preprocessing_stage\highres3dnet_prostate_seg_config_infer.ini
+[T2]
+-- csv_file: 
+-- path_to_search: C:\Users\pmeht\Documents\packages\patient_classification_framework\inference_example\0_input\t2w
+-- filename_contains: ('nii',)
+-- filename_not_contains: ()
+-- interp_order: 3
+-- loader: None
+-- pixdim: (1.0, 1.0, 1.0)
+-- axcodes: ('A', 'R', 'S')
+-- spatial_window_size: ()
+[SYSTEM]
+-- cuda_devices: ""
+-- num_threads: 2
+-- num_gpus: 1
+-- model_dir: C:\Users\pmeht\Documents\packages\prostate_segmentation_highres3dnet\saved_model
+-- dataset_split_file: .\dataset_split.csv
+-- action: inference
+[NETWORK]
+-- name: highres3dnet
+-- activation_function: relu
+-- batch_size: 4
+-- decay: 0.0
+-- reg_type: L2
+-- volume_padding_size: (10, 10, 10)
+-- window_sampling: uniform
+-- queue_length: 8
+-- multimod_foreground_type: and
+-- histogram_ref_file: C:\Users\pmeht\Documents\packages\prostate_segmentation_highres3dnet\saved_model\histogram_ref\landmarks.txt
+-- norm_type: percentile
+-- cutoff: (0.01, 0.99)
+-- foreground_type: otsu_plus
+-- normalisation: True
+-- whitening: True
+-- normalise_foreground_only: False
+-- weight_initializer: he_normal
+-- bias_initializer: zeros
+-- weight_initializer_args: {}
+-- bias_initializer_args: {}
+[INFERENCE]
+-- spatial_window_size: (96, 96, 64)
+-- inference_iter: 19500
+-- dataset_to_infer: 
+-- save_seg_dir: C:\Users\pmeht\Documents\packages\patient_classification_framework\inference_example\1_prostate_seg\prostate_seg_t2w_space
+-- output_interp_order: 0
+-- border: (10, 10, 10)

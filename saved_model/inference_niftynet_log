@@ -1,0 +1,121 @@
+INFO:niftynet:2022-01-06 13:14:14,148: Import [SegmentationApplication] from C:\Users\pmeht\miniconda3\envs\prostate_segmentation_highres3dnet_venv\lib\site-packages\niftynet\application\segmentation_application.py.
+INFO:niftynet:2022-01-06 13:14:14,163: starting segmentation application
+INFO:niftynet:2022-01-06 13:14:14,171: `csv_file = ` not found, writing to "C:\Users\pmeht\Documents\packages\prostate_segmentation_highres3dnet\saved_model\T2.csv" instead.
+INFO:niftynet:2022-01-06 13:14:14,184: [T2] search file folders, writing csv file C:\Users\pmeht\Documents\packages\prostate_segmentation_highres3dnet\saved_model\T2.csv
+INFO:niftynet:2022-01-06 13:14:14,197: 
+
+Number of subjects 5, input section names: ['subject_id', 'T2']
+-- using all subjects (without data partitioning).
+
+INFO:niftynet:2022-01-06 13:14:14,990: Image reader: loading 5 subjects from sections ('T2',) as input [image]
+INFO:niftynet:2022-01-06 13:14:14,997: normalisation histogram reference models ready for image:('T2',)
+INFO:niftynet:2022-01-06 13:14:15,008: reading size of preprocessed inputs
+INFO:niftynet:2022-01-06 13:14:15,018: initialised window instance
+INFO:niftynet:2022-01-06 13:14:15,019: buffering with 10 windows
+INFO:niftynet:2022-01-06 13:14:15,045: initialised sampler output {'image': (1, 96, 96, 64, 1, 1), 'image_location': (1, 7)}
+INFO:niftynet:2022-01-06 13:16:01,207: Starting preprocessing threads...
+INFO:niftynet:2022-01-06 13:16:01,214: New thread: 0
+INFO:niftynet:2022-01-06 13:16:01,214: Filling queues (this can take a few minutes)
+INFO:niftynet:2022-01-06 13:16:01,386: Import [HighRes3DNet] from C:\Users\pmeht\miniconda3\envs\prostate_segmentation_highres3dnet_venv\lib\site-packages\niftynet\network\highres3dnet.py.
+INFO:niftynet:2022-01-06 13:16:01,392: Import [HeNormal] from C:\Users\pmeht\miniconda3\envs\prostate_segmentation_highres3dnet_venv\lib\site-packages\niftynet\engine\application_initializer.py.
+INFO:niftynet:2022-01-06 13:16:01,393: Import [Zeros] from C:\Users\pmeht\miniconda3\envs\prostate_segmentation_highres3dnet_venv\lib\site-packages\niftynet\engine\application_initializer.py.
+INFO:niftynet:2022-01-06 13:16:01,413: using HighRes3DNet
+INFO:niftynet:2022-01-06 13:16:02,975: grid sampling image sizes: {'image': (212, 212, 77, 1, 1)}
+INFO:niftynet:2022-01-06 13:16:02,977: grid sampling window sizes: {'image': (96, 96, 64, 1, 1)}
+INFO:niftynet:2022-01-06 13:16:02,992: yielding 27 locations from image, extended to 28 to be divisible by batch size 4
+INFO:niftynet:2022-01-06 13:16:03,685: starting from iter 19500
+INFO:niftynet:2022-01-06 13:16:05,479: Accessing C:\Users\pmeht\Documents\packages\prostate_segmentation_highres3dnet\saved_model\models\model.ckpt-19500 ...
+INFO:niftynet:2022-01-06 13:16:05,480: Restoring parameters from C:\Users\pmeht\Documents\packages\prostate_segmentation_highres3dnet\saved_model\models\model.ckpt-19500
+INFO:niftynet:2022-01-06 13:16:12,698: Inference iter 0,  (7.079806s)
+INFO:niftynet:2022-01-06 13:16:14,997: Inference iter 1,  (2.295003s)
+INFO:niftynet:2022-01-06 13:16:17,301: Inference iter 2,  (2.300994s)
+INFO:niftynet:2022-01-06 13:16:19,614: Inference iter 3,  (2.311039s)
+INFO:niftynet:2022-01-06 13:16:21,454: grid sampling image sizes: {'image': (212, 212, 77, 1, 1)}
+INFO:niftynet:2022-01-06 13:16:21,454: grid sampling window sizes: {'image': (96, 96, 64, 1, 1)}
+INFO:niftynet:2022-01-06 13:16:21,458: yielding 27 locations from image, extended to 28 to be divisible by batch size 4
+INFO:niftynet:2022-01-06 13:16:21,925: Inference iter 4,  (2.307393s)
+INFO:niftynet:2022-01-06 13:16:24,235: Inference iter 5,  (2.307036s)
+INFO:niftynet:2022-01-06 13:16:26,548: Inference iter 6,  (2.312675s)
+INFO:niftynet:2022-01-06 13:16:29,008: Inference iter 7,  (2.300037s)
+INFO:niftynet:2022-01-06 13:16:31,318: Inference iter 8,  (2.306997s)
+INFO:niftynet:2022-01-06 13:16:33,638: Inference iter 9,  (2.318001s)
+INFO:niftynet:2022-01-06 13:16:35,953: Inference iter 10,  (2.310993s)
+INFO:niftynet:2022-01-06 13:16:38,275: Inference iter 11,  (2.319003s)
+INFO:niftynet:2022-01-06 13:16:38,399: grid sampling image sizes: {'image': (212, 212, 77, 1, 1)}
+INFO:niftynet:2022-01-06 13:16:38,402: grid sampling window sizes: {'image': (96, 96, 64, 1, 1)}
+INFO:niftynet:2022-01-06 13:16:38,411: yielding 27 locations from image, extended to 28 to be divisible by batch size 4
+INFO:niftynet:2022-01-06 13:16:40,602: Inference iter 12,  (2.324062s)
+INFO:niftynet:2022-01-06 13:16:42,920: Inference iter 13,  (2.313783s)
+INFO:niftynet:2022-01-06 13:16:45,492: Inference iter 14,  (2.323036s)
+INFO:niftynet:2022-01-06 13:16:47,815: Inference iter 15,  (2.321999s)
+INFO:niftynet:2022-01-06 13:16:50,132: Inference iter 16,  (2.313998s)
+INFO:niftynet:2022-01-06 13:16:53,427: Inference iter 17,  (3.294000s)
+INFO:niftynet:2022-01-06 13:16:55,563: grid sampling image sizes: {'image': (212, 212, 83, 1, 1)}
+INFO:niftynet:2022-01-06 13:16:55,564: grid sampling window sizes: {'image': (96, 96, 64, 1, 1)}
+INFO:niftynet:2022-01-06 13:16:55,594: yielding 27 locations from image, extended to 28 to be divisible by batch size 4
+INFO:niftynet:2022-01-06 13:16:56,087: Inference iter 18,  (2.653014s)
+INFO:niftynet:2022-01-06 13:16:58,773: Inference iter 19,  (2.683978s)
+INFO:niftynet:2022-01-06 13:17:01,929: Inference iter 20,  (3.151011s)
+INFO:niftynet:2022-01-06 13:17:06,064: Inference iter 21,  (3.930991s)
+INFO:niftynet:2022-01-06 13:17:09,494: Inference iter 22,  (3.426998s)
+INFO:niftynet:2022-01-06 13:17:12,471: Inference iter 23,  (2.974006s)
+INFO:niftynet:2022-01-06 13:17:16,428: Inference iter 24,  (3.953986s)
+INFO:niftynet:2022-01-06 13:17:19,694: Inference iter 25,  (3.263039s)
+INFO:niftynet:2022-01-06 13:17:20,629: grid sampling image sizes: {'image': (212, 212, 106, 1, 1)}
+INFO:niftynet:2022-01-06 13:17:20,632: grid sampling window sizes: {'image': (96, 96, 64, 1, 1)}
+INFO:niftynet:2022-01-06 13:17:20,660: yielding 27 locations from image, extended to 28 to be divisible by batch size 4
+INFO:niftynet:2022-01-06 13:17:23,071: Inference iter 26,  (3.374876s)
+INFO:niftynet:2022-01-06 13:17:27,541: Inference iter 27,  (4.468010s)
+INFO:niftynet:2022-01-06 13:17:31,626: Inference iter 28,  (3.865195s)
+INFO:niftynet:2022-01-06 13:17:35,669: Inference iter 29,  (4.039999s)
+INFO:niftynet:2022-01-06 13:17:39,763: Inference iter 30,  (4.089253s)
+INFO:niftynet:2022-01-06 13:17:43,867: Inference iter 31,  (4.097668s)
+INFO:niftynet:2022-01-06 13:17:47,955: Inference iter 32,  (4.082135s)
+INFO:niftynet:2022-01-06 13:17:52,038: Inference iter 33,  (4.078575s)
+INFO:niftynet:2022-01-06 13:17:56,130: Inference iter 34,  (4.089056s)
+INFO:niftynet:2022-01-06 13:18:01,250: processed all batches.
+INFO:niftynet:2022-01-06 13:18:01,252: Inference iter 35,  (4.954932s)
+INFO:niftynet:2022-01-06 13:18:01,265: Cleaning up...
+INFO:niftynet:2022-01-06 13:18:01,270: stopping sampling threads
+INFO:niftynet:2022-01-06 13:18:01,315: SegmentationApplication stopped (time in second 115.73).
+INFO:niftynet:2022-01-06 23:41:31,501: Import [SegmentationApplication] from C:\Users\pmeht\miniconda3\envs\prostate_segmentation_highres3dnet_venv\lib\site-packages\niftynet\application\segmentation_application.py.
+INFO:niftynet:2022-01-06 23:41:31,502: starting segmentation application
+INFO:niftynet:2022-01-06 23:41:31,503: `csv_file = ` not found, writing to "C:\Users\pmeht\Documents\packages\prostate_segmentation_highres3dnet\saved_model\T2.csv" instead.
+INFO:niftynet:2022-01-06 23:41:31,510: Overwriting existing: "C:\Users\pmeht\Documents\packages\prostate_segmentation_highres3dnet\saved_model\T2.csv".
+INFO:niftynet:2022-01-06 23:41:31,511: [T2] search file folders, writing csv file C:\Users\pmeht\Documents\packages\prostate_segmentation_highres3dnet\saved_model\T2.csv
+INFO:niftynet:2022-01-06 23:41:31,521: 
+
+Number of subjects 1, input section names: ['subject_id', 'T2']
+-- using all subjects (without data partitioning).
+
+INFO:niftynet:2022-01-06 23:41:31,553: Image reader: loading 1 subjects from sections ('T2',) as input [image]
+INFO:niftynet:2022-01-06 23:41:31,558: normalisation histogram reference models ready for image:('T2',)
+INFO:niftynet:2022-01-06 23:41:31,562: reading size of preprocessed inputs
+INFO:niftynet:2022-01-06 23:41:31,569: initialised window instance
+INFO:niftynet:2022-01-06 23:41:31,570: buffering with 10 windows
+INFO:niftynet:2022-01-06 23:41:31,581: initialised sampler output {'image': (1, 96, 96, 64, 1, 1), 'image_location': (1, 7)}
+INFO:niftynet:2022-01-06 23:41:35,907: Starting preprocessing threads...
+INFO:niftynet:2022-01-06 23:41:35,909: New thread: 0
+INFO:niftynet:2022-01-06 23:41:35,909: Filling queues (this can take a few minutes)
+INFO:niftynet:2022-01-06 23:41:35,952: Import [HighRes3DNet] from C:\Users\pmeht\miniconda3\envs\prostate_segmentation_highres3dnet_venv\lib\site-packages\niftynet\network\highres3dnet.py.
+INFO:niftynet:2022-01-06 23:41:35,954: Import [HeNormal] from C:\Users\pmeht\miniconda3\envs\prostate_segmentation_highres3dnet_venv\lib\site-packages\niftynet\engine\application_initializer.py.
+INFO:niftynet:2022-01-06 23:41:35,955: Import [Zeros] from C:\Users\pmeht\miniconda3\envs\prostate_segmentation_highres3dnet_venv\lib\site-packages\niftynet\engine\application_initializer.py.
+INFO:niftynet:2022-01-06 23:41:35,966: using HighRes3DNet
+INFO:niftynet:2022-01-06 23:41:37,417: starting from iter 19500
+INFO:niftynet:2022-01-06 23:41:37,432: Accessing C:\Users\pmeht\Documents\packages\prostate_segmentation_highres3dnet\saved_model\models\model.ckpt-19500 ...
+INFO:niftynet:2022-01-06 23:41:37,432: Restoring parameters from C:\Users\pmeht\Documents\packages\prostate_segmentation_highres3dnet\saved_model\models\model.ckpt-19500
+INFO:niftynet:2022-01-06 23:41:39,495: grid sampling image sizes: {'image': (200, 200, 110, 1, 1)}
+INFO:niftynet:2022-01-06 23:41:39,496: grid sampling window sizes: {'image': (96, 96, 64, 1, 1)}
+INFO:niftynet:2022-01-06 23:41:39,499: yielding 27 locations from image, extended to 28 to be divisible by batch size 4
+INFO:niftynet:2022-01-06 23:41:51,962: Inference iter 0,  (14.244057s)
+INFO:niftynet:2022-01-06 23:41:54,226: Inference iter 1,  (2.262020s)
+INFO:niftynet:2022-01-06 23:41:56,491: Inference iter 2,  (2.261080s)
+INFO:niftynet:2022-01-06 23:41:58,766: Inference iter 3,  (2.272512s)
+INFO:niftynet:2022-01-06 23:42:01,045: Inference iter 4,  (2.275995s)
+INFO:niftynet:2022-01-06 23:42:03,324: Inference iter 5,  (2.275028s)
+INFO:niftynet:2022-01-06 23:42:05,605: Inference iter 6,  (2.277997s)
+INFO:niftynet:2022-01-06 23:42:08,151: processed all batches.
+INFO:niftynet:2022-01-06 23:42:08,151: Inference iter 7,  (2.242046s)
+INFO:niftynet:2022-01-06 23:42:08,152: Cleaning up...
+INFO:niftynet:2022-01-06 23:42:08,159: stopping sampling threads
+INFO:niftynet:2022-01-06 23:42:08,175: SegmentationApplication stopped (time in second 30.50).

@@ -1,0 +1,15 @@
+six>=1.10
+nibabel>=2.1.0
+numpy>=1.12
+scipy>=0.18
+configparser
+tensorflow-gpu==1.7
+niftynet==0.3.0
+pandas
+pillow
+blinker
+SimpleITK
+xlrd
+scikit-image
+PyYAML
+opencv-python
